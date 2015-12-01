@@ -1,0 +1,115 @@
+<Page x:Class="SmartNotes.QueriedListPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:SmartNotes"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:data="using:SmartNotes.Models"
+      mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid Name="ParentGrid"
+              MaxWidth="1100"
+              Background="White">
+
+            <TextBlock Text="There are no notes to display"
+                       Name="EmptyListTextBlock"
+                       FontSize="30"
+                       Visibility="Collapsed"
+                       Foreground="LightSlateGray"
+                       TextWrapping="Wrap"
+                       FontStyle="Italic"
+                       Margin="10, 100"
+                       TextAlignment="Center"
+                       HorizontalAlignment="Center" />
+
+            <GridView ItemsSource="{x:Bind Notes}"
+                      Margin="0, 10, 0, 0"
+                      HorizontalAlignment="Center"
+                      IsItemClickEnabled="True"
+                      SelectionMode="None"
+                      Name="MainGridView"
+                      ItemClick="MainGridView_ItemClick">
+                <GridView.ItemTemplate>
+                    <DataTemplate x:DataType="data:Note">
+                        <StackPanel Background="{x:Bind StringColor}"
+                                    Name="MainStackPanel"
+                                    Holding="MainStackPanel_Holding"
+                                    IsHoldingEnabled="True"
+                                    IsRightTapEnabled="True"
+                                    RightTapped="MainStackPanel_RightTapped"
+                                    BorderBrush="LightGray"
+                                    BorderThickness="0,0,3,3"
+                                    Margin="5"
+                                    CornerRadius="3">
+                            <FlyoutBase.AttachedFlyout>
+                                <MenuFlyout x:Name="NoteMenuFlyout">
+                                    <MenuFlyoutItem Text="Edit"
+                                                    Name="EditNoteFlyoutItem"
+                                                    Click="EditNoteFlyoutItem_Click" />
+                                    <MenuFlyoutItem Text="Delete"
+                                                    Name="DeleteNoteFlyoutItem"
+                                                    Click="DeleteNoteFlyoutItem_Click" />
+                                    <MenuFlyoutSeparator />
+                                    <MenuFlyoutItem Text="{x:Bind PinText}"
+                                                    Name="PinUnpinNoteFlyoutItem"
+                                                    Click="PinUnpinNoteFlyoutItem_Click" />
+                                    <MenuFlyoutItem Text="Share"
+                                                    Name="ShareNoteFlyoutItem"
+                                                    Click="ShareNoteFlyoutItem_Click" />
+                                </MenuFlyout>
+                            </FlyoutBase.AttachedFlyout>
+                            <Grid>
+                                <StackPanel Width="320"
+                                            Height="200"
+                                            Margin="5"
+                                            VerticalAlignment="Top">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock FontSize="18"
+                                                   Margin="5"
+                                                   VerticalAlignment="Center"
+                                                   FontWeight="Bold"
+                                                   TextTrimming="CharacterEllipsis"
+                                                   Text="{x:Bind Title}" />
+                                        <TextBlock Name="LastEditDateTextBlock"
+                                                   Grid.Column="1"
+                                                   Text="{x:Bind EditDate}"
+                                                   HorizontalAlignment="Right"
+                                                   VerticalAlignment="Center"
+                                                   FontSize="14"
+                                                   FontStyle="Italic"
+                                                   Margin="5" />
+                                    </Grid>
+                                    <TextBlock FontSize="18"
+                                               Margin="5"
+                                               Height="150"
+                                               TextWrapping="Wrap"
+                                               Text="{x:Bind Text}" />
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+
+            <Button Name="AddNoteButton"
+                    Click="AddNoteButton_Click"
+                    HorizontalAlignment="Right"
+                    Background="#474747"
+                    Foreground="Aqua"
+                    VerticalAlignment="Bottom"
+                    BorderBrush="LightGray"
+                    BorderThickness="0,0,3,3"
+                    Margin="0, 0, 40, 40"
+                    FontFamily="Segoe MDL2 Assets"
+                    FontSize="52"
+                    Content="&#xECC8;" />
+
+        </Grid>
+    </Grid>
+</Page>

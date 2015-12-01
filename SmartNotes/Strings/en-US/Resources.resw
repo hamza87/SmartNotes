@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="editpage_contenttextbox.PlaceholderText" xml:space="preserve">
+    <value>Put the content here</value>
+  </data>
+  <data name="editpage_deletebutton.Label" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="editpage_optionsbutton.Label" xml:space="preserve">
+    <value>Colors and tags</value>
+  </data>
+  <data name="editpage_optionsgrid_addtag.PlaceholderText" xml:space="preserve">
+    <value>Add a tag here</value>
+  </data>
+  <data name="editpage_savebutton.Label" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="editpage_sharebutton.Label" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="editpage_titletextbox.PlaceholderText" xml:space="preserve">
+    <value>Put a title here</value>
+  </data>
+  <data name="lock_text" xml:space="preserve">
+    <value>Lock</value>
+  </data>
+  <data name="mainpage_quitbutton.Text" xml:space="preserve">
+    <value>Quit</value>
+  </data>
+  <data name="mainpage_searchbox.PlaceholderText" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="mainpage_settingsbutton.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="notespage_deleteflyout.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="notespage_duplicateflyout.Text" xml:space="preserve">
+    <value>Duplicate</value>
+  </data>
+  <data name="notespage_emptylist.Text" xml:space="preserve">
+    <value>There are no notes to display</value>
+  </data>
+  <data name="notespage_lockflyout.Text" xml:space="preserve">
+    <value>Lock</value>
+  </data>
+  <data name="notespage_lockgrid_hint.Text" xml:space="preserve">
+    <value>You can change it in settings</value>
+  </data>
+  <data name="notespage_lockgrid_main.Text" xml:space="preserve">
+    <value>Type the four digit code</value>
+  </data>
+  <data name="notespage_pinflyout.Text" xml:space="preserve">
+    <value>Pin to Start</value>
+  </data>
+  <data name="notespage_shareflyout.Text" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="notespage_unlockflyout.Text" xml:space="preserve">
+    <value>Unlock</value>
+  </data>
+  <data name="notespage_unpinflyout.Text" xml:space="preserve">
+    <value>Unpin from Start</value>
+  </data>
+  <data name="now" xml:space="preserve">
+    <value>Now</value>
+  </data>
+  <data name="no_tags_textblock" xml:space="preserve">
+    <value>No tags</value>
+  </data>
+  <data name="pin_error_text" xml:space="preserve">
+    <value>The tile could not be created.</value>
+  </data>
+  <data name="pin_error_title" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="pin_text" xml:space="preserve">
+    <value>Pin to Start</value>
+  </data>
+  <data name="settings_changepincode_changehint" xml:space="preserve">
+    <value>Type the current code in order to update it</value>
+  </data>
+  <data name="settings_changepincode_defaulthint.Text" xml:space="preserve">
+    <value>By default, the pin code is 0000</value>
+  </data>
+  <data name="settings_changepincode_newcodehint" xml:space="preserve">
+    <value>Enter a new four digit code</value>
+  </data>
+  <data name="settings_changepincode_successhint" xml:space="preserve">
+    <value>Pin code successfully updated</value>
+  </data>
+  <data name="settings_changepincode_title.Text" xml:space="preserve">
+    <value>Change the pin code</value>
+  </data>
+  <data name="settings_currentpintextbox.PlaceholderText" xml:space="preserve">
+    <value>current</value>
+  </data>
+  <data name="settings_newpintextbox.PlaceholderText" xml:space="preserve">
+    <value>new</value>
+  </data>
+  <data name="settings_notessorting_title.Text" xml:space="preserve">
+    <value>Notes sorting order</value>
+  </data>
+  <data name="settings_sortingradio_bydate.Content" xml:space="preserve">
+    <value>By date</value>
+  </data>
+  <data name="settings_sortingradio_bytitle.Content" xml:space="preserve">
+    <value>By title</value>
+  </data>
+  <data name="share_error" xml:space="preserve">
+    <value>Nothing to share</value>
+  </data>
+  <data name="unlock_text" xml:space="preserve">
+    <value>Unlock</value>
+  </data>
+  <data name="unpin_text" xml:space="preserve">
+    <value>Unpin from Start</value>
+  </data>
+  <data name="yesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="about_content_text.Text" xml:space="preserve">
+    <value>Please report to me any problem you may encounter. I am also open to any suggestion to improve the app. Thanks.</value>
+  </data>
+  <data name="about_developed_by.Text" xml:space="preserve">
+    <value>developed by</value>
+  </data>
+  <data name="about_title_text.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="about_version_number.Text" xml:space="preserve">
+    <value>version number</value>
+  </data>
+  <data name="settings_mail_content" xml:space="preserve">
+    <value>Please do not remove the informations below:</value>
+  </data>
+  <data name="settings_mail_subject" xml:space="preserve">
+    <value>Smart Notes - Support</value>
+  </data>
+  <data name="settings_share_text" xml:space="preserve">
+    <value>Hi!
+Smart Notes is a simple note taking application for Windows 10. You can find it by clicking the link below. Enjoy ;)</value>
+  </data>
+  <data name="settings_contactbutton.Label" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="settings_ratebutton.Label" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="settings_sharebutton.Label" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="dialog_button_no" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="dialog_button_yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="dialog_close_content" xml:space="preserve">
+    <value>Close the app?</value>
+  </data>
+  <data name="dialog_close_title" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="dialog_ignore_content" xml:space="preserve">
+    <value>The note has been modified. Ignore changes?</value>
+  </data>
+  <data name="dialog_ignore_title" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+</root>
